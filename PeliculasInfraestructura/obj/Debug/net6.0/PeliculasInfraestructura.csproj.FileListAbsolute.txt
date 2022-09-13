@@ -1,0 +1,17 @@
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\bin\Debug\net6.0\PeliculasInfraestructura.deps.json
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\bin\Debug\net6.0\PeliculasInfraestructura.dll
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\bin\Debug\net6.0\PeliculasInfraestructura.pdb
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\bin\Debug\net6.0\PeliculasCore.dll
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\bin\Debug\net6.0\PeliculasCore.pdb
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\PeliculasInfraestructura.csproj.AssemblyReference.cache
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\PeliculasInfraestructura.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\PeliculasInfraestructura.AssemblyInfoInputs.cache
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\PeliculasInfraestructura.AssemblyInfo.cs
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\PeliculasInfraestructura.csproj.CoreCompileInputs.cache
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\PeliculasInfraestructura.csproj.CopyComplete
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\PeliculasInfraestructura.dll
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\refint\PeliculasInfraestructura.dll
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\PeliculasInfraestructura.pdb
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\ref\PeliculasInfraestructura.dll
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\bin\Debug\net6.0\PeliculasInfraestructura.runtimeconfig.json
+C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasInfraestructura\obj\Debug\net6.0\PeliculasInfraestructura.genruntimeconfig.cache
