@@ -10,3 +10,15 @@ C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasCore\obj\Debug\net6.0\Pel
 C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasCore\obj\Debug\net6.0\refint\PeliculasCore.dll
 C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasCore\obj\Debug\net6.0\PeliculasCore.pdb
 C:\Users\Bmez\source\repos\Proyecto_Curso_API\PeliculasCore\obj\Debug\net6.0\ref\PeliculasCore.dll
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\bin\Debug\net6.0\PeliculasCore.deps.json
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\bin\Debug\net6.0\PeliculasCore.dll
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\bin\Debug\net6.0\PeliculasCore.pdb
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\obj\Debug\net6.0\PeliculasCore.csproj.AssemblyReference.cache
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\obj\Debug\net6.0\PeliculasCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\obj\Debug\net6.0\PeliculasCore.AssemblyInfoInputs.cache
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\obj\Debug\net6.0\PeliculasCore.AssemblyInfo.cs
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\obj\Debug\net6.0\PeliculasCore.csproj.CoreCompileInputs.cache
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\obj\Debug\net6.0\PeliculasCore.dll
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\obj\Debug\net6.0\refint\PeliculasCore.dll
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\obj\Debug\net6.0\PeliculasCore.pdb
+C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasCore\obj\Debug\net6.0\ref\PeliculasCore.dll
