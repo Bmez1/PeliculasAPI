@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using PeliculasCore.Interfaces.Repositories;
 using PeliculasInfraestructura.Context;
+using PeliculasInfraestructura.Repositories;
 
 namespace PeliculasAPI
 {
@@ -11,6 +13,8 @@ namespace PeliculasAPI
         public static IServiceCollection AddServicesInfraestructure(this IServiceCollection services)
         {
             services.AddDatabaseContexts();
+            services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+            services.AddScoped<IGenderRepository, GenderRepository>();
             return services;
         }
         private static IServiceCollection AddDatabaseContexts(this IServiceCollection services)

@@ -10,11 +10,11 @@
         "projectUniqueName": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasAPI\\PeliculasAPI.csproj",
         "projectName": "PeliculasAPI",
         "projectPath": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasAPI\\PeliculasAPI.csproj",
-        "packagesPath": "C:\\Users\\Desarrollo\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasAPI\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Desarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,11 +87,11 @@
         "projectUniqueName": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasCore\\PeliculasCore.csproj",
         "projectName": "PeliculasCore",
         "projectPath": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasCore\\PeliculasCore.csproj",
-        "packagesPath": "C:\\Users\\Desarrollo\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasCore\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Desarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -117,6 +117,10 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[11.0.0, )"
+            },
             "Microsoft.Extensions.DependencyInjection.Abstractions": {
               "target": "Package",
               "version": "[6.0.0, )"
@@ -148,11 +152,11 @@
         "projectUniqueName": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasInfraestructura\\PeliculasInfraestructura.csproj",
         "projectName": "PeliculasInfraestructura",
         "projectPath": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasInfraestructura\\PeliculasInfraestructura.csproj",
-        "packagesPath": "C:\\Users\\Desarrollo\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasInfraestructura\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Desarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [

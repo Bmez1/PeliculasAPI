@@ -1,4 +1,5 @@
 using PeliculasAPI;
+using PeliculasCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,7 +11,7 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddServicesInfraestructure();
-
+builder.Services.AddCoreServices();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

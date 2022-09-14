@@ -128,3 +128,5 @@ C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasAPI\obj\Debug\net6.0\refi
 C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasAPI\obj\Debug\net6.0\PeliculasAPI.pdb
 C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasAPI\obj\Debug\net6.0\PeliculasAPI.genruntimeconfig.cache
 C:\Users\Desarrollo\Source\Repos\PeliculasAPI\PeliculasAPI\obj\Debug\net6.0\ref\PeliculasAPI.dll
+C:\Users\Desarrollo\source\repos\PeliculasAPI\PeliculasAPI\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\Desarrollo\source\repos\PeliculasAPI\PeliculasAPI\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

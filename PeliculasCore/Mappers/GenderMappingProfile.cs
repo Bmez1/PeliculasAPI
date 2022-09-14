@@ -9,11 +9,12 @@ using System.Threading.Tasks;
 
 namespace PeliculasCore.Mappers
 {
-    internal class GenderMappingProfile : Profile
+    public class GenderMappingProfile : Profile
     {
         public GenderMappingProfile()
         {
             CreateMap<GenderCreateDTO, Gender>().ReverseMap();
+            CreateMap<ListGenderDTO, Gender>().ReverseMap();
         }
     }
 }

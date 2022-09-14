@@ -3,11 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.2.32602.215
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeliculasAPI", "PeliculasAPI\PeliculasAPI.csproj", "{3CDA9BDF-BCD3-4B9D-B609-A6388FC2EA9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeliculasAPI", "PeliculasAPI\PeliculasAPI.csproj", "{3CDA9BDF-BCD3-4B9D-B609-A6388FC2EA9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeliculasCore", "PeliculasCore\PeliculasCore.csproj", "{5FE65252-860C-46CA-89FA-EF3B7DB24AF9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeliculasCore", "PeliculasCore\PeliculasCore.csproj", "{5FE65252-860C-46CA-89FA-EF3B7DB24AF9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeliculasInfraestructura", "PeliculasInfraestructura\PeliculasInfraestructura.csproj", "{BFC8DADD-5D80-471C-A15F-6E7346C339F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PeliculasInfraestructura", "PeliculasInfraestructura\PeliculasInfraestructura.csproj", "{BFC8DADD-5D80-471C-A15F-6E7346C339F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Elementos de la solución", "Elementos de la solución", "{C1456BEE-3FA3-4D15-B25F-9FAA3374735D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		Diagrama de clases Proyecto Peliculas API.png = Diagrama de clases Proyecto Peliculas API.png
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

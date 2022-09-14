@@ -1,6 +1,8 @@
 ﻿using AutoMapper;
 using Microsoft.Extensions.DependencyInjection;
+using PeliculasCore.Interfaces.Services;
 using PeliculasCore.Mappers;
+using PeliculasCore.Services;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,6 +16,8 @@ namespace PeliculasCore
         public static IServiceCollection AddCoreServices(this IServiceCollection services)
         {
             services.AddMappingProfileServices();
+            services.AddScoped(typeof(IGenericService<>), typeof(GenercicService<>));
+            services.AddScoped<IGenderService, GenderService>();
 
             return services;
         }
