@@ -786,6 +786,9 @@
       "PeliculasCore/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "6.0.0"
+        },
         "compile": {
           "bin/placeholder/PeliculasCore.dll": {}
         },
@@ -2032,7 +2035,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\Desarrollo\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -2040,11 +2043,11 @@
       "projectUniqueName": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasInfraestructura\\PeliculasInfraestructura.csproj",
       "projectName": "PeliculasInfraestructura",
       "projectPath": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasInfraestructura\\PeliculasInfraestructura.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Desarrollo\\Source\\Repos\\PeliculasAPI\\PeliculasInfraestructura\\obj\\",
+      "packagesPath": "C:\\Users\\Desarrollo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Desarrollo\\source\\repos\\PeliculasAPI\\PeliculasInfraestructura\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Desarrollo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -2119,7 +2122,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
       }
     }
   }
