@@ -42,7 +42,7 @@ namespace PeliculasCore.Services
             return await _repository.GetAsync(id);
         }
 
-        public virtual async Task<TEntity> UpdateAsync(long id, TEntity entity)
+        public virtual async Task<TEntity> UpdateAsync(TEntity entity)
         {
             await _repository.UpdateAsync(entity);
             return entity;

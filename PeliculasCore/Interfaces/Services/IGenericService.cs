@@ -32,8 +32,8 @@ namespace PeliculasCore.Interfaces.Services
         /// </summary>
         /// <param name="entity">Entidad a actualizar</param>
         /// <param name="id">Id de la entidad a actualizar</param>
-        /// <returns>Entidad actualizada</returns>
-        public Task<TEntity> UpdateAsync(long id, TEntity entity);
+        /// <returns>Entidad actualizada o nulo</returns>
+        public Task<TEntity> UpdateAsync(TEntity entity);
 
         /// <summary>
         /// Finalidad: Registrar una entidad dentro de la base de datos

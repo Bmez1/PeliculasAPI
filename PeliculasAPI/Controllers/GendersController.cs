@@ -6,7 +6,6 @@ using PeliculasCore.Entities;
 using PeliculasCore.Interfaces.Services;
 using PeliculasAPI.Herlpers;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
 namespace PeliculasAPI.Controllers
 {
@@ -39,7 +38,7 @@ namespace PeliculasAPI.Controllers
             catch (Exception ex)
             {
                 _logger.LogCritical($"Error: {ex.Message}");
-                return BadRequest("Error interno en el servidor");
+                return BadRequest(ResponseAPI.ERROR_GENERAL);
             }
         }
 
@@ -56,17 +55,13 @@ namespace PeliculasAPI.Controllers
                 }
                 else
                 {
-                    return NotFound(new
-                    {
-                        Respuesta = $"No se encuentran registros pertenecientes al Id {id}",
-                        Id = id,
-                    });
+                    return NotFound(ResponseAPI.EntityNotFound(id));
                 }
             }
             catch (Exception ex)
             {
                 _logger.LogError("Error interno: " + ex.Message);
-                return BadRequest("Error interno en el servidor");
+                return BadRequest(ResponseAPI.ERROR_GENERAL);
             }
         }
 
@@ -85,10 +80,8 @@ namespace PeliculasAPI.Controllers
             catch (Exception ex)
             {
                 _logger.LogError($"Error al insertar el objeto: {ex.Message}");
-                return BadRequest($"Error interno en el servidor: {ex.Message}");
+                return BadRequest(ResponseAPI.ERROR_GENERAL);
             }
-
-
         }
 
         // PUT api/<GendersController>/5
@@ -97,26 +90,19 @@ namespace PeliculasAPI.Controllers
         {
             try
             {
-                Gender gender = _mapper.Map<Gender>(genderDTO);
-                GenderDTO response= _mapper.Map<GenderDTO>(await _genderService.UpdateAsync(id, gender));
-                if (await _genderService.UpdateAsync(id, gender) != null)
-                {
-                    return Ok(new
-                    {
-                        Message = "Registro actualizado con exito",
-                        Data = response
-                    });
-                }
-                else
-                {
-                    return StatusCode(404, $"El registro con la identificación {id} no se encuentra");
-                }
+                Gender genderUpdate = await _genderService.GetAsync(id);
+                if (genderUpdate == null) return NotFound(ResponseAPI.EntityNotFound(id));
+
+                genderUpdate = _mapper.Map(genderDTO, genderUpdate);
+                GenderDTO response = _mapper.Map<GenderDTO>(await _genderService.UpdateAsync(genderUpdate));
+
+                return Ok(ResponseAPI.EntityUpdate(response));                    
 
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message);
-                return BadRequest("Error interno en el servidor");
+                return BadRequest(ResponseAPI.ERROR_GENERAL);
             }
 
 
@@ -128,20 +114,14 @@ namespace PeliculasAPI.Controllers
         {
             try
             {
-                if (await _genderService.DeleteAsync(id) is not null)
-                {
-                    return StatusCode(200, "Registro eliminado con exito");
-                }
-                else
-                {  
-                    return NotFound($"El registro con la identificación {id} no se encuentra");
-                }
+                return await _genderService.DeleteAsync(id) is not null ? Ok(ResponseAPI.EntityDelete(id)) :
+                    NotFound(ResponseAPI.EntityNotFound(id));
 
             }
             catch (Exception ex)
             {
                 _logger.LogError(ex.Message);
-                return BadRequest("Error interno en el servidor");
+                return BadRequest(ResponseAPI.ERROR_GENERAL);
             }
         }
     }

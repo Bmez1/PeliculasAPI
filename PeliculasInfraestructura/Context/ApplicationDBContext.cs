@@ -15,5 +15,6 @@ namespace PeliculasInfraestructura.Context
         }
 
         public DbSet<Gender>? Genders { get; set; }
+        public DbSet<Actor>? Actors { get; set; }
     }
 }

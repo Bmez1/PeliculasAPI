@@ -18,6 +18,9 @@ namespace PeliculasCore
             services.AddMappingProfileServices();
             services.AddScoped(typeof(IGenericService<>), typeof(GenercicService<>));
             services.AddScoped<IGenderService, GenderService>();
+            services.AddScoped<IActorService, ActorService>();
+            services.AddTransient<IStoreFile, StoreFileLocal>();
+            //services.AddHttpContextAccessor();
 
             return services;
         }
@@ -27,6 +30,7 @@ namespace PeliculasCore
             var mapperConfig = new MapperConfiguration(mc =>
             {
                 mc.AddProfile(new GenderMappingProfile());
+                mc.AddProfile(new ActorMappingProfile());
             });
 
             IMapper mapper = mapperConfig.CreateMapper();

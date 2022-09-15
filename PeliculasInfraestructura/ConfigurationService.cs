@@ -15,6 +15,7 @@ namespace PeliculasAPI
             services.AddDatabaseContexts();
             services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
             services.AddScoped<IGenderRepository, GenderRepository>();
+            services.AddScoped<IActorRepository, ActorRepository>();
             return services;
         }
         private static IServiceCollection AddDatabaseContexts(this IServiceCollection services)

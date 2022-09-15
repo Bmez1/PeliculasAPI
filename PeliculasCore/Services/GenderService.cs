@@ -19,17 +19,5 @@ namespace PeliculasCore.Services
             _repository = repository;
         }
 
-        public async override Task<Gender> UpdateAsync(long id, Gender entity)
-        {
-            Gender genderUpdate = await _repository.GetAsync(id);
-            if (genderUpdate != null)
-            {
-                genderUpdate.Name = entity.Name;
-                genderUpdate.Id = id;
-                await _repository.UpdateAsync(genderUpdate);
-            }
-
-            return genderUpdate;
-        }
     }
 }
