@@ -7,9 +7,9 @@ using System.Threading.Tasks;
 
 namespace PeliculasCore.DTOs
 {
-    internal class GenderCreateDTO
+    public class GenderCreateDTO
     {
-        [Required]
+        [Required(ErrorMessage = "El ccampo {0} es requerido")]
         [StringLength(20, ErrorMessage = "Error: El campo {0} no debe tener una longotid mayor a {1}")]
         public string Name { get; set; }
     }

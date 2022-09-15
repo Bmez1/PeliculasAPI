@@ -22,9 +22,14 @@ namespace PeliculasCore.Services
             return entity;
         }
 
-        public virtual async Task DeleteAsync(TEntity entity)
+        public virtual async Task<TEntity> DeleteAsync(long id)
         {
-            await _repository.DeleteAsync(entity);
+            TEntity entity = await _repository.GetAsync(id);
+            if (entity != null)
+            {
+               await _repository.DeleteAsync(entity);
+            }
+            return entity;
         }
 
         public virtual async Task<IEnumerable<TEntity>> GetAllAsync()
@@ -32,12 +37,12 @@ namespace PeliculasCore.Services
             return await _repository.GetAllAsync();
         }
 
-        public virtual async Task<TEntity> GetAsync(int id)
+        public virtual async Task<TEntity> GetAsync(long id)
         {
             return await _repository.GetAsync(id);
         }
 
-        public virtual async Task<TEntity> UpdateAsync(TEntity entity)
+        public virtual async Task<TEntity> UpdateAsync(long id, TEntity entity)
         {
             await _repository.UpdateAsync(entity);
             return entity;

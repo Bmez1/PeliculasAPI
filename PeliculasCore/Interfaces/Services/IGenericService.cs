@@ -19,20 +19,21 @@ namespace PeliculasCore.Interfaces.Services
         /// </summary>
         /// <param name="id">id que identifica el registro</param>
         /// <returns>Retorna el registro</returns>
-        public Task<TEntity> GetAsync(int id);
+        public Task<TEntity> GetAsync(long id);
 
         /// <summary>
         /// Finalidad: Eliminar un registro de la base de datos
         /// </summary>
-        /// <param name="entity">Entidad a eliminar</param>
-        public Task DeleteAsync(TEntity entity);
+        /// <param name="id">Id de la entidad a eliminar</param>
+        public Task<TEntity> DeleteAsync(long id);
 
         /// <summary>
         /// Finalidad: Actualizar un registro dentro de la base de datos
         /// </summary>
         /// <param name="entity">Entidad a actualizar</param>
+        /// <param name="id">Id de la entidad a actualizar</param>
         /// <returns>Entidad actualizada</returns>
-        public Task<TEntity> UpdateAsync(TEntity entity);
+        public Task<TEntity> UpdateAsync(long id, TEntity entity);
 
         /// <summary>
         /// Finalidad: Registrar una entidad dentro de la base de datos

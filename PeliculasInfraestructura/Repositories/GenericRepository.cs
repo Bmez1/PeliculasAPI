@@ -36,7 +36,7 @@ namespace PeliculasInfraestructura.Repositories
 
         public async Task<IEnumerable<TEntity>> GetAllAsync() => await _db.ToListAsync();
 
-        public async Task<TEntity> GetAsync(int id) => await _db.FindAsync(id);
+        public async Task<TEntity> GetAsync(long id) => await _db.FindAsync(id);
 
         public async Task UpdateAsync(TEntity entity)
         {

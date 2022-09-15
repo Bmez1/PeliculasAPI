@@ -20,7 +20,7 @@ namespace PeliculasCore.Interfaces.Repositories
         /// </summary>
         /// <param name="id">id que identifica el registro</param>
         /// <returns>Retorna el registro</returns>
-        public Task<TEntity> GetAsync(int id);
+        public Task<TEntity> GetAsync(long id);
 
         /// <summary>
         /// Finalidad: Eliminar un registro de la base de datos

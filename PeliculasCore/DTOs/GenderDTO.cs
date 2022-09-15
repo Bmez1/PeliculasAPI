@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PeliculasCore.DTOs
 {
-    public class ListGenderDTO
+    public class GenderDTO
     {
         public long Id { get; set; }
         public string Name { get; set; }

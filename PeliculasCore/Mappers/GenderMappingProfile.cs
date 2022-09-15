@@ -14,7 +14,7 @@ namespace PeliculasCore.Mappers
         public GenderMappingProfile()
         {
             CreateMap<GenderCreateDTO, Gender>().ReverseMap();
-            CreateMap<ListGenderDTO, Gender>().ReverseMap();
+            CreateMap<GenderDTO, Gender>().ReverseMap();
         }
     }
 }
