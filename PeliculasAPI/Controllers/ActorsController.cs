@@ -26,11 +26,14 @@ namespace PeliculasAPI.Controllers
 
         // GET: api/<ActorsController>
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<ActorDTO>>> GetActors()
+        public async Task<ActionResult<IEnumerable<ActorDTO>>> GetActors([FromQuery] PaginationDTO paginationDto)
         {
             try
             {
-                IEnumerable<Actor> listActors = await _actorService.GetAllAsync(); 
+                int numberRecords = await _actorService.GetNumberRecords();
+                await HttpContext.InsertParametersPagination(numberRecords, paginationDto.NumberRecordsPage);
+                //IEnumerable<Actor> listActors = await _actorService.GetAllAsync(); 
+                IEnumerable<Actor> listActors = await _actorService.GetByPagination(paginationDto.Page, paginationDto.NumberRecordsPage);
                 IEnumerable<ActorDTO> listActorsDTO = _mapper.Map<IEnumerable<ActorDTO>>(listActors);
                 return Ok(listActorsDTO);                
 

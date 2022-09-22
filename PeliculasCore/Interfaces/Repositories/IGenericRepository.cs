@@ -48,5 +48,19 @@ namespace PeliculasCore.Interfaces.Repositories
         /// <param name="expression"></param>
         /// <returns>Lista de entidades filtradas dada una condición</returns>
         public Task<IEnumerable<TEntity>> FindByFilterAsync(Expression<Func<TEntity, bool>> expression);
+        
+        /// <summary>
+        /// Finalidad: Realizar la consulta de una entidad por paginación
+        /// </summary>
+        /// <param name="page">Número de la página a consultar</param>
+        /// <param name="numberRecordsPage">Cantidad de registros a buscar</param>
+        /// <returns></returns>
+        public Task<IEnumerable<TEntity>> GetByPagination(int page, int numberRecordsPage);
+
+        /// <summary>
+        /// Finalidad: Devolver la cantidad de registros de una entidad en la db
+        /// </summary>
+        /// <returns>Valor numerico con la cantidad de registros de una entidad</returns>
+        public Task<int> GetNumberRecords();
     }
 }

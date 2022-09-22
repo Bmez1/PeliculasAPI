@@ -22,6 +22,16 @@ namespace PeliculasCore.Services
             return entity;
         }
 
+        public Task<int> GetNumberRecords()
+        {
+            return _repository.GetNumberRecords();
+        }
+
+        public async Task<IEnumerable<TEntity>> GetByPagination(int page, int numberRecordsPage)
+        {
+            return await _repository.GetByPagination(page, numberRecordsPage);
+        }
+
         public virtual async Task<TEntity> DeleteAsync(long id)
         {
             TEntity entity = await _repository.GetAsync(id);

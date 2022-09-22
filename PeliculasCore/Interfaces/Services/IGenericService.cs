@@ -41,5 +41,20 @@ namespace PeliculasCore.Interfaces.Services
         /// <param name="entity"></param>
         /// <returns>Entidad registrada</returns>
         public Task<TEntity> AddAsync(TEntity entity);
+
+        /// <summary>
+        /// Finalidad: Buscar la cantidad de registros que posee una tabla
+        /// </summary>
+        /// <returns>Cantidad de registros de una tabla segun la entidad</returns>
+        public Task<int> GetNumberRecords();
+
+        /// <summary>
+        /// Finalidad: Consultar los registros de una entidad por paginación
+        /// </summary>
+        /// <param name="page">Número de página</param>
+        /// <param name="numberRecordsPage">Cantidad de registro por página</param>
+        /// <returns></returns>
+        public Task<IEnumerable<TEntity>> GetByPagination(int page, int numberRecordsPage);
+
     }
 }

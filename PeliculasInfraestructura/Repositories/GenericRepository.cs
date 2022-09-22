@@ -46,5 +46,16 @@ namespace PeliculasInfraestructura.Repositories
         }
         public async Task<IEnumerable<TEntity>> FindByFilterAsync(Expression<Func<TEntity, bool>> expression) =>
             await _db.Where(expression).ToListAsync();
+
+        public async Task<IEnumerable<TEntity>> GetByPagination(int page, int numberRecordsPage)
+        {
+            return await _db.Skip((page - 1) * numberRecordsPage)
+                .Take(numberRecordsPage).ToListAsync();
+        }
+
+        public async Task<int> GetNumberRecords()
+        {
+            return await _db.CountAsync();
+        }
     }
 }
